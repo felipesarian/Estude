@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estude.com - Solicitar Ajuda</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <button id="menuButton">&#9776;</button>
+        <h1>Estude.com</h1>
+        <img src="../img/perfil.png" alt="Perfil" class="profile-icon">
+
+    </header>
+
+    <nav id="sidebar">
+        <button id="closeSidebar">&times;</button>
+            <ul>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="oferecer_ajuda.html">Oferecer Ajuda</a></li>
+                <li><a href="solicitar_ajuda.html">Solicitar Ajuda</a></li>
+                <li><a href="forum_duvidas.html">Fórum de Dúvidas</a></li>
+                <li><a href="mensagens.html">Mensagens</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </ul>
+        <p>&copy; Estude.com 2024</p>
+    </nav>
+
+    <main>
+        <h2>Solicitar Ajuda</h2>
+        <form>
+            <label for="modo">Como deseja aprender?</label>
+            <select id="modo">
+                <option value="" disabled selected>Selecione o modo de ensino</option>
+                <option value="online">Online</option>
+                <option value="presencial">Presencial</option>
+            </select>
+
+            <textarea placeholder="Deixe aqui informações extras sobre a aula..."></textarea>
+
+            <label for="materia">Qual a matéria da aula?</label>
+            <input type="text" id="materia" placeholder="Descreva a parte da matéria...">
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" placeholder="Ajude seu professor a entender como ele pode te ajudar!"></textarea>
+
+            <button type="submit" onclick="showSuccessMessage()">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <ul class="icone-rodape">
+            <li><a href="index.html"><img src="../img/home.png"></a></li>
+            <li><a href="ranking.html"><img src="../img/ranking.png"></a></li>
+            <li><a href=""><img src="../img/amigos.png"></a></li>
+            <li><a href="mensagens.html"><img src="../img/mensagens.png"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
